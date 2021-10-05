@@ -1,4 +1,69 @@
-.her-container{
+.hero-container{
     padding: 20px;
     margin: 20px;
+    float: flex;
+    font-size: 20px; 
 }
+
+input, #prefix, #vBodyData, #capacitydata, #addDrivers{
+    width: 8%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#lastname, #firstname{
+    width: 30%;
+}
+#phonenumber{
+    width: 30%;
+}
+
+#address1, #address2{
+    width: 78%;
+}
+#landmark, #city, #postcode{
+    width: 30%;
+}
+
+button{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif; 
+
+    
+}
+
+button :hover{
+    background-color: rgb(99, 95, 95);
+    cursor: pointer;
+
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+
+#vehicle-info #vBodyData, #capacitydata, #addDrivers {    
+    width: 30%;
+}
+#vehicle-info, #capacitydata{
+    margin: 0px 70px 0px 0px;
+}
+
+
+
+
+  @media screen and (max-width: 600px) {
+     
+  }
