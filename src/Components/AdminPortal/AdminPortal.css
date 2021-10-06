@@ -1,0 +1,12 @@
+.getbutton{
+    width: 20%;
+    margin-left: 150px;
+}
+
+.area{
+    width: 50%;
+}
+
+input.area.last {
+    width: 21%;
+}

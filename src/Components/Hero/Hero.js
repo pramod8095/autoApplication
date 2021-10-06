@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
+import Frca from '../FRCA/Frca'
 import './Hero.css'
 
 export default function Hero() {
@@ -10,6 +11,8 @@ export default function Hero() {
     return (
         
         <div className='hero-container'>
+            
+            <Frca />
             <Card>
             <h1>Basic info </h1>
             <form onSubmit={submitHandler}> 
@@ -104,6 +107,10 @@ export default function Hero() {
                             No
                         </label>
                     </div>
+                </form>
+                <form>
+                    <label for='regist'> When was vehicle registered &emsp;&emsp;&nbsp;</label>
+                    <input type='date' id='regist-date' />
                 </form>
                 
             </Card>

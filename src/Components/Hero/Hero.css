@@ -12,9 +12,6 @@ input, #prefix, #vBodyData, #capacitydata, #addDrivers{
     box-sizing: border-box;
 }
 
-#lastname, #firstname{
-    width: 30%;
-}
 #phonenumber{
     width: 30%;
 }
@@ -22,7 +19,7 @@ input, #prefix, #vBodyData, #capacitydata, #addDrivers{
 #address1, #address2{
     width: 78%;
 }
-#landmark, #city, #postcode{
+#landmark, #city, #postcode,#lastname, #firstname, #vehicle-info #vBodyData, #capacitydata, #addDrivers,#regist-date{
     width: 30%;
 }
 
@@ -54,9 +51,7 @@ textarea {
     resize: none;
   }
 
-#vehicle-info #vBodyData, #capacitydata, #addDrivers {    
-    width: 30%;
-}
+
 #vehicle-info, #capacitydata{
     margin: 0px 70px 0px 0px;
 }
