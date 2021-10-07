@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from '../Card/Card'
 import Frca from '../FRCA/Frca'
 import './Hero.css'
 
 export default function Hero() {
+
+    const [prefix, setPrefix] = useState()
+    const [fname, setFname] = useState()
+    const [lname, setLname] = useState()
+    const [pnumber, setPnumber] = useState()
+    const [addr1, setAddr1] = useState()
+    const [addr2, setAddr2] = useState()
+    const [land, setLand] = useState()
+    const [city, setCity] = useState()
+
+
 
     function submitHandler(){
         console.log('submitted')
@@ -24,28 +35,28 @@ export default function Hero() {
                     <option value='ms'>Ms.</option>
                 </select>
                 <label for='fname' required> *First Name </label>
-                <input type='text' id='firstname' placeholder='Enter Name'/>
+                <input type='text' id='firstname' placeholder='Enter Name' name='fname'/>
 
                 <label for='lname' required> *Last Name </label>
-                <input type='text' id='lastname' placeholder='Enter Name'/><br/><br/>
+                <input type='text' id='lastname' placeholder='Enter Name' name='lname'/><br/><br/>
 
                 <label for='pnumber' required> Phone Number &nbsp; </label>
-                <input type='text' id='phonenumber' placeholder='Phone number'/> <br/> <br/>
+                <input type='text' id='phonenumber' placeholder='Phone number'name='pnumber'/> <br/> <br/>
 
                 <label for='addr' required> Address(Street) </label>
-                <input type='text' id='address1' placeholder='*Please enter the street name'/> <br/><br/>
+                <input type='text' id='address1' placeholder='*Please enter the street name' name='addr1'/> <br/><br/>
 
                 <label for='addr' required> Address(Street) </label>
-                <input type='text' id='address2' placeholder='please enter road name'/><br/><br/>
+                <input type='text' id='address2' placeholder='please enter road name' name='addr2'/><br/><br/>
 
                 <label for='landmark'> Landmark &emsp;&emsp;  </label>
-                <input type='text' id='landmark' placeholder='Landmark (optional)'/> <br/><br/>
+                <input type='text' id='landmark' placeholder='Landmark (optional)' name='landmark'/> <br/><br/>
 
                 <label for='city' required> *City </label>&emsp;&emsp;&emsp;&emsp;&nbsp;
-                <input type='text' id='city' placeholder='*City'/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <input type='text' id='city' placeholder='*City' name='city'/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
                 <label for='postcode' required> *Postcode </label>
-                <input type='number' id='postcode' placeholder='PIN code'/><br/><br/>
+                <input type='number' id='postcode' placeholder='PIN code' name='pcode'/><br/><br/>
 
                 
             </form>
